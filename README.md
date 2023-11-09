@@ -1,5 +1,7 @@
 # Discord-Inactive-Check-Bot
-檢測伺服器是否有不活躍的使用者，並把他們列出來 。
+檢測伺服器是否有不活躍的使用者，並把他們列出來 。  
+
+![image](https://media.discordapp.net/attachments/1101088367111831613/1172183962949537925/image.png?ex=655f6462&is=654cef62&hm=77673f827374bd36d16d60468b6f1773e0c5c84ef008f3e92e97a41dd50de2d2&=)
 
 # 指令
 
