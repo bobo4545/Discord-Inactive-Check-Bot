@@ -12,6 +12,7 @@
 確認有哪些使用者是不活躍的
 
 # settings.json設定
-"token"填入你的Bot Token
-"guild"填入你的伺服器ID
-"inactive"填入不活躍的判定"天"數
+
+"token"填入你的Bot Token  
+"guild"填入你的伺服器ID  
+"inactive"填入不活躍的判定"天"數  
