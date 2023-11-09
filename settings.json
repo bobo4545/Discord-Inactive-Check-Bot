@@ -1,0 +1,5 @@
+{
+    "token" : "TOKEN HERE",
+    "guild" : "GUILD ID HERE",
+    "inactive" : 30 //days
+}
