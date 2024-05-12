@@ -26,9 +26,9 @@
   ```
   2. (可選) 創建一個虛擬環境並啟動它
   ```
-  python -m venv venv
-  source venv/bin/activate  # 在Unix或Mac OS上
-  venv\Scripts\activate  # 在Windows上
+  python -m venv dicb
+  source dicb/bin/activate  # 在Unix或Mac OS上
+  dicb\Scripts\activate  # 在Windows上
   ```
   3. 安裝依賴項
   ```
