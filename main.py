@@ -2,6 +2,16 @@ import discord
 from discord.ext import commands
 import json
 from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv
+
+# 載入.env檔案中的環境變數
+load_dotenv()
+
+# 使用os.getenv()讀取這些環境變數
+token = os.getenv('TOKEN')
+guild_id = os.getenv('GUILD_ID')
+inactive_days = int(os.getenv('INACTIVE_DAYS'))
 
 intents = discord.Intents.all()
 intents.members = True
@@ -45,12 +55,8 @@ def check_inactive():
     with open('activity.json', 'r') as f:
         activity_data = json.load(f)
 
-    # Load the settings from the file
-    with open('settings.json', 'r') as f:
-        settings = json.load(f)
-
-    # Calculate the inactive time threshold
-    inactive_threshold = datetime.now() - timedelta(days=settings['inactive'])
+    # Calculate the inactive time threshold using the variable from environment
+    inactive_threshold = datetime.now() - timedelta(days=inactive_days)
 
     # Check the activity data for inactive users
     inactive_users = []
@@ -61,8 +67,6 @@ def check_inactive():
 
     # Return the inactive users
     return inactive_users
-
-
 
 #玩家加入伺服器
 @bot.event
@@ -181,4 +185,4 @@ def update_db():
 
 # 目前無法偵測文字編輯
 
-bot.run(settings['token'])
+bot.run(token)
