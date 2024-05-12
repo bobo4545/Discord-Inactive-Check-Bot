@@ -3,34 +3,38 @@
 
 # 安裝
 
-## DOCKER
-  1.複製存儲庫
+## 使用docker
+  1. 複製存儲庫
   ```
   git clone https://github.com/bobo4545/Discord-Inactive-Check-Bot.git
   cd Discord-Inactive-Check-Bot
   ```
-  2.編輯好.env後輸入
+  2. 編輯好.env後輸入以下命令，進行容器的構建和啟動
   ```
   docker-compose up --build -d
   ```
+  3. 已經構建了容器不需要重新構建，執行以下命令啟動機器人
+  ```
+  docker-compose up -d
+  ```
 
 ## 本地安裝
-  1.複製存儲庫
+  1. 複製存儲庫
   ```
   git clone https://github.com/bobo4545/Discord-Inactive-Check-Bot.git```
   cd Discord-Inactive-Check-Bot
   ```
-  2.(可選) 創建一個虛擬環境並啟動它
+  2. (可選) 創建一個虛擬環境並啟動它
   ```
   python -m venv venv
   source venv/bin/activate  # 在Unix或Mac OS上
   venv\Scripts\activate  # 在Windows上
   ```
-  3.安裝依賴項
+  3. 安裝依賴項
   ```
   pip install -r requirements.txt
   ```
-  4.啟動機器人
+  4. 啟動機器人
   ```
   python main.py
   ```
