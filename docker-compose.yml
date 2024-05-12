@@ -1,0 +1,10 @@
+version: '3'
+services:
+  discord-bot:
+    build: .
+    container_name: dicb
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: unless-stopped
